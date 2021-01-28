@@ -1,32 +1,29 @@
 import styled from 'styled-components';
+import React from 'react';
 
 const LogoWrapper = styled.div`
+margin: auto;
 display: flex;
-width: 500px;
-align-items: center;
-justify-content: center;
+width: 100vw;
 
-img {
-    width: 100%;
-    margin: 50px 0 0 250px
-  }
+ img {
+    width:400px;
+    margin: auto;
+  }  
 
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     img {
-        margin: 100px 50px 0;
-        width: 80%;
+        margin: auto;
+        width: 40%;
     }
 }
-
 `;
 
-
-
-
-
-export default function Logo(props){
-    return <LogoWrapper {...props}>
-         <img src="https://i.imgur.com/G9sYsaF.png" alt="Logo WOW QUIZZ" />
+export default function Logo(props) {
+  return (
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    <LogoWrapper {...props}>
+      <img src="https://i.imgur.com/WWY3gZd.png" alt="Logo Cthulhu Quiz" />
     </LogoWrapper>
-
-}  
+  );
+}

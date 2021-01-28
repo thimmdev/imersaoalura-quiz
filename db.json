@@ -1,29 +1,73 @@
 {
-    "bg": "https://i.imgur.com/HpbzGWz.jpeg",
-    "title": "Quiz CSS da Alura",
-    "logo": "https://i.imgur.com/G9sYsaF.png",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "bg": "https://i.imgur.com/V1PyZur.jpeg",
+    "quizBg": "https://i.imgur.com/eU4eST4.jpeg",
+    "title": "Cthulhu Quiz",
+    "logo": "https://i.imgur.com/WWY3gZd.png",
+    "description": "A quiz to know the cthulhu cultists around the earth.",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://ss-pics.s3.eu-west-1.amazonaws.com/files/1020774/large-Necronomicon-Handmade-book-cthulhu-lovecraft_24.jpg?1585328493",
+        "title": "Who wrote the Necronomicon?",
+        "description": "The Necronomicon – showed in a lot of stories and became a masterpiece of the pop culture. Was created to give credibility to a world that if, not realistic, at least believable.",
+        "success": "The Necronomicon is credited to author Abdul Alhazred, who we can presume was both an Arab and quite mad.", 
+        "answer": 3,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Randolph Carter",
+          "H. P. Lovecraft",
+          "Yog-Sothoth",
+          "Abdul Alhazred, The mad Arab"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://uploads.spiritfanfiction.com/fanfics/capitulos/202005/o-chamado-de-cthulhu--sombras-de-nyarlathotep-19232598-070520200040.jpg",
+        "title": "In what form does Nyarlathotep typically manifest?",
+        "description": "Nyarlathotep is one of the most feared entities by humans, just for the pleasrure it feels when it comes to invoke madness an chaos.",
+        "success": "Nyarlathotep is usually seen as a tall Egyptian man who attracts many followers.",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Tall Egiptian Man",
+           "An invisible force of great Power",
+           "A moving lake filled with slowly blinking eyes",
+           "An enormous mass which extrudes black tentacles, with goat legs"
+        ]
+      },
+      {
+        "image": "https://1.bp.blogspot.com/-ILn7fl8Veu4/XbL9RbZLw4I/AAAAAAAAecE/7DdiHPPX7sQQ5-mnEb09AnWfl4aI090kQCLcBGAsYHQ/s400/dunwich1.jpg",
+        "title": "Where does Wilbur go to try and borrow a copy of the Necronomicon?",
+        "description": "The Necronomicon has spells that Wilbur can use to summon the Old Ones.",
+        "success": "The librarian at Miskatonic University denies Wilbur's request.", 
+        "answer": 1,
+        "alternatives": [
+          "arkham Asylum",
+          "Miskatonic University",
+          "Yale University",
+          "R'lyeh"
+        ]
+      },
+      {
+        "image": "https://wallpaperaccess.com/full/1631538.jpg",
+        "title": "What is - the Black Goat of the Woods - ?",
+        "description": "A Great Old One that first appeared at the -The Last Test-" ,
+        "success": "Shub-Niggurath is the Black Goat of the Woods With a Thousand Young..", 
+        "answer": 1,
+        "alternatives": [
+          "C'thalpa",
+          "Shub-Niggurath",
+          "Xexanoth",
+          "Cthulhu"
+        ]
+      },
+      {
+        "image": "https://wallpaperaccess.com/thumb/3157678.jpg",
+        "title": "What does Cthulhu look like?",
+        "description": "The old one slumbers at R'lyeh.",
+        "success": "Lovecraft described Cthulhu as giant green monstrosity bearing an awful squid-head with writhing feelers.", 
+        "answer": 3,
+        "alternatives": [
+          "A round fungus with numerous eye stalks",
+          "A green-skinned man with blades for hands",
+          "A mass of glowing orbs, with eyes or tendrils",
+          "A giant green humanoid with a vaguely octopus like head"
         ]
       }
     ],
@@ -32,14 +76,15 @@
     ],
     "theme": {
       "colors": {
-        "primary": "#7bc24a",
-        "secondary": "#442374",
+        "primary": "#8fcc00",
+        "secondary": "#2f4a1c",
         "bgBox": "#262626",
         "mainBg": "#161616",
         "textWhite": "#ffffff",
         "contrastText": "#779955",
         "wrong": "#ff8f00",
-        "success": "#4dd0e1"
+        "success": "#4dd0e1",
+        "transpBox": "rgba(0, 0, 0, 0.5)"
       },
       "borderRadius": "4px"
     }
