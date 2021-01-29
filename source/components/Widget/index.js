@@ -99,4 +99,51 @@ ul {
 }
 `;
 
+Widget.Topic = styled.a `
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => theme.colors.secondary};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  transition: .3s;
+  display: block;
+  cursor: pointer;
+
+  &:hover, 
+  &:focus {
+    background-color: ${({ theme }) => theme.colors.transpBox};
+    color: white;
+  }
+
+  &:active {
+    background-color: ${({ theme }) => theme.colors.transpBox};
+    color: white;
+    animation: shake 0.3s;       
+    animation-iteration-count: infinite;
+
+  }
+
+  &:checked {
+    background-color: ${({ theme }) => theme.colors.transpBox};
+    color: white;
+  }
+
+  @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+
+`;
+
 export default Widget;

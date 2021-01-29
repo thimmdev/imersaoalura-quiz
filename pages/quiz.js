@@ -12,8 +12,89 @@ import Input from '../source/components/Input';
 import Section from '../source/components/Section';
 import QuizContainer from '../source/components/QuizContainer';
 
+function QuestionWidget ( { question, questionIndex, totalQuestions, onSubmit }) {
+  return (
+
+  <Widget>
+    <Widget.Header>
+    <h1> {`Cthulhu Quiz - Pergunta ${ questionIndex +1 } de ${ totalQuestions }`}</h1>
+    </Widget.Header>
+      <img 
+      alt="Necronomicon"
+      style={{ 
+        width: '100%',
+        height: '150px',
+        objectFit: 'cover',
+      }}
+      src={question.image}
+      />
+      <Widget.Content>
+      <h2>
+      {question.title}
+      </h2>
+      <p>
+      {question.description}
+      </p>
+
+      <form onSubmit = { ( infosDoEvento ) => {
+        infosDoEvento.preventDefault();
+        onSubmit();
+      }}>
+      {question.alternatives.map(( alternative, alternativeIndex ) =>   {
+        const alternativeId = `alternative__${alternativeIndex}`;
+        const questionId = `question__${ questionIndex }`
+        return (
+          <Widget.Topic as="label" htmlFor={alternativeId}>
+            <input 
+            // style={{ display: "none" }}
+              id={alternativeId}
+              name={ questionId }
+              type ="radio"
+              />
+              {alternative}
+          </Widget.Topic>
+        );
+      })
+      };
+
+      <Button type="submit">Confirm!</Button>
+      </form>
+
+
+
+      </Widget.Content>
+      </Widget>
+);
+};
+
+const screenStates = {
+  QUIZ: 'QUIZ',
+  LOADING: 'LOADING',
+  RESULT: 'RESULT',
+};
+
 export default function QuizPage() {
-  const question = db.questions[0];
+  const [screenState, setScreenState] = React.useState(screenStates.QUIZ);
+  const totalQuestions = db.questions.length;
+  const [currentQuestion, setCurrentQuestion] = React.useState(0);
+  const questionIndex = currentQuestion;
+  const question = db.questions[questionIndex];
+
+  React.useEffect( () => { 
+  setTimeout (() => {
+    setScreenState(screenStates.QUIZ);
+  }, 1 * 1000);
+}, []);
+
+  function handleSubmitQuiz ( ) {
+    const nextQuestion = questionIndex + 1;
+    if ( nextQuestion < totalQuestions ) {
+      setCurrentQuestion (nextQuestion);
+    } else {
+      setScreenState(screenStates.RESULT);
+    }
+  };
+  
   return (
 
     <QuizBackground backgroundImage={db.quizBg}>
@@ -24,12 +105,18 @@ export default function QuizPage() {
       <Logo />
       <QuizContainer>
         <Section>
-          <Widget>
-            <Widget.Header>
-              <h1> Cthulhu Follower Quiz </h1>
-            </Widget.Header>
-            <Widget.Content />
-          </Widget>
+         {screenState === screenStates.QUIZ && (
+           <QuestionWidget
+           question={ question }
+           questionIndex={ questionIndex }
+           totalQuestions={ totalQuestions }
+           onSubmit = { handleSubmitQuiz }
+       />
+       )}
+
+         {screenState === screenStates.LOADING && <LoadingWidget />}
+
+         {screenState === screenStates.RESULT && <div> Você acertou X questões, Parabéns! </div>}
         </Section>
       </QuizContainer>
 
