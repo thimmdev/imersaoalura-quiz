@@ -2,6 +2,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable react/prop-types */
 
+import React from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Head from 'next/Head';
 import db from '../db.json';

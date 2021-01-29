@@ -1,15 +1,16 @@
 import React from 'react';
+import styled from 'styled-components';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 import db from '../db.json';
 import Widget from '../source/components/Widget';
+import Logo from '../source/components/Logo';
 import QuizBackground from '../source/components/QuizBackground';
 import Footer from '../source/components/Footer';
 import GitHubCorner from '../source/components/GitHubCorner';
-import Logo from '../source/components/Logo';
-import Button from '../source/components/Button';
 import Input from '../source/components/Input';
+import Button from '../source/components/Button';
 import Section from '../source/components/Section';
 import QuizContainer from '../source/components/QuizContainer';
 import FooterSection from '../source/components/FooterSection';

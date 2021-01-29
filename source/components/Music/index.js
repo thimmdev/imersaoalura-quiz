@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Music = styled.div`
 margin-top: 20px;
-width: 100%
+width: 100%;
 background-color: ${({ theme }) => theme.colors.mainBg};
 `;
 
