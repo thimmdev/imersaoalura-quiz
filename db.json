@@ -82,8 +82,8 @@
         "mainBg": "#161616",
         "textWhite": "#ffffff",
         "contrastText": "#779955",
-        "wrong": "#ff8f00",
-        "success": "#4dd0e1",
+        "wrong": "#780000",
+        "success": "#8500de",
         "transpBox": "rgba(0, 0, 0, 0.5)"
       },
       "borderRadius": "4px"
