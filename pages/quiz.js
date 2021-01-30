@@ -183,6 +183,7 @@ export default function QuizPage() {
     <QuizBackground backgroundImage={db.quizBg}>
        <Head>
         <title>Cthulhu Quiz - H.P.Lovecraft</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="shortcut icon" href="https://i.imgur.com/jBNJ0pW.jpeg" />
       </Head>
       <Logo />
