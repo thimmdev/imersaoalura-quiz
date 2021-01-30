@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 import db from '../db.json';
@@ -19,10 +20,10 @@ export default function Home() {
 
   return (
     <QuizBackground backgroundImage={db.bg}>
-      <header>
+      <Head>
         <title>Cthulhu Quiz - H.P.Lovecraft</title>
         <link rel="shortcut icon" href="https://i.imgur.com/jBNJ0pW.jpeg" />
-      </header>
+      </Head>
       <Logo />
       <QuizContainer>
         <Section>

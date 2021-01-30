@@ -1,4 +1,6 @@
 import React from 'react';
+import Head from 'next/head';
+
 import db from '../db.json';
 import Widget from '../source/components/Widget';
 import Logo from '../source/components/Logo';
@@ -179,6 +181,10 @@ export default function QuizPage() {
   return (
 
     <QuizBackground backgroundImage={db.quizBg}>
+       <Head>
+        <title>Cthulhu Quiz - H.P.Lovecraft</title>
+        <link rel="shortcut icon" href="https://i.imgur.com/jBNJ0pW.jpeg" />
+      </Head>
       <Logo />
       <QuizContainer>
         <Section>
