@@ -6,6 +6,10 @@ const Section = styled.section`
     background-color: ${({ theme }) => theme.colors.transpBox};
     justify-content: space-evenly;
 
+    .loadingGif {
+    margin: 30px 0 10px;
+    }
+
     @media (max-width: 600px){
     flex-wrap: flex;
     flex-direction: column;

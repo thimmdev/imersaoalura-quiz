@@ -87,6 +87,12 @@ ul {
   padding: 0;
 }
 
+.loadingGif {
+  justify-content: center;
+  width: 350px;
+  height: auto;
+}
+
 @media (max-width: 320px) {
   max-width:auto;
   position: relative;
@@ -97,6 +103,7 @@ ul {
     left: 20px;
   }
 }
+
 `;
 
 Widget.Topic = styled.a `
@@ -110,6 +117,13 @@ Widget.Topic = styled.a `
   transition: .3s;
   display: block;
   cursor: pointer;
+
+  input {
+  position: absolute;
+  opacity: 0;
+}
+
+
 
   &:hover, 
   &:focus {

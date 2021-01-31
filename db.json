@@ -8,7 +8,7 @@
       {
         "image": "https://ss-pics.s3.eu-west-1.amazonaws.com/files/1020774/large-Necronomicon-Handmade-book-cthulhu-lovecraft_24.jpg?1585328493",
         "title": "Who wrote the Necronomicon?",
-        "description": "The Necronomicon – showed in a lot of stories and became a masterpiece of the pop culture. Was created to give credibility to a world that if, not realistic, at least believable.",
+        "description": "The Necronomicon – showed in a lot of stories and became a masterpiece of the pop culture. Was created to give credibility to a world that if, not realistic is at least believable.",
         "success": "The Necronomicon is credited to author Abdul Alhazred, who we can presume was both an Arab and quite mad.", 
         "answer": 3,
         "alternatives": [
@@ -72,7 +72,8 @@
       }
     ],
     "external": [
-      ""
+      "https://quiz-games.gabrielwolf-dev.vercel.app/",
+      "https://aluraquiz-devsoutinho.omariosouto.vercel.app/"
     ],
     "theme": {
       "colors": {

@@ -11,7 +11,7 @@ const InputBase = styled.input`
     height: 45px;
     background-color: ${({ theme }) => theme.colors.mainBg};
     color: ${({ theme }) => theme.colors.primary};
-    
+      
     border-radius: 5px;
     border: 2px solid ${({ theme }) => theme.colors.transpBox};
     box-shadow: inset 0 0px 30px black;
@@ -54,12 +54,12 @@ export default function Input({ onChange, placeholder, ...props }) {
 }
 
 Input.defaultProps = {
-    value: '',
+  value: '',
 };
 
 Input.propTypes = {
-    onChange: PropTypes.func.isRequired,
-    placeholder: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    value: PropTypes.string.isRequired,
-}
+  onChange: PropTypes.func.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+};
