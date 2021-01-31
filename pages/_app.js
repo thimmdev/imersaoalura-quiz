@@ -4,7 +4,7 @@
 
 import React from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import Head from 'next/Head';
+// import Head from 'next/Head';
 import db from '../db.json';
 
 const GlobalStyle = createGlobalStyle`
@@ -38,10 +38,10 @@ const { theme } = db;
 export default function App({ Component, pageProps }) {
   return (
     <div>
-      <Head>
+      {/* <Head>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700;900&display=swap" rel="stylesheet" />
-      </Head>
+      </Head> */}
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         { /* eslint-disable-next-line react/jsx-props-no-spreading */ }

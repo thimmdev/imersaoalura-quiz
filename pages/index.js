@@ -1,5 +1,5 @@
 import React from 'react';
-import Head from 'next/head';
+// import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 import db from '../db.json';
@@ -20,11 +20,11 @@ export default function Home() {
 
   return (
     <QuizBackground backgroundImage={db.bg}>
-      <Head>
+      {/* <Head>
         <title>Cthulhu Quiz - H.P.Lovecraft</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="shortcut icon" href="https://i.imgur.com/jBNJ0pW.jpeg" />
-      </Head>
+      </Head> */}
       <Logo />
       <QuizContainer>
         <Section>
@@ -47,14 +47,14 @@ export default function Home() {
               >
                 <Input
                   name="nomeDoUsuario"
-                    onChange={(infosDoEvento) => {
+                  onChange={(infosDoEvento) => {
                     setName(infosDoEvento.target.value);
                   }}
                   placeholder="Your name here mortal"
                   value={name}
                 />
                 <Button type="submit" disabled={name.length === 0}>
-                  {`${name} Know thy scream for sanity! `}               
+                  {`${name} Know thy scream for sanity! `}
                 </Button>
               </form>
             </Widget.Content>
