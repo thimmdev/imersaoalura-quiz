@@ -9,10 +9,13 @@
     "lint": "eslint ./ --fix"
   },
   "dependencies": {
+    "framer-motion": "^3.2.2-rc.1",
     "next": "^10.0.6",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
+    "react-audio-player": "^0.14.0",
     "react-dom": "^16.14.0",
+    "react-h5-audio-player": "^3.5.0",
     "react-is": "^16.8.0",
     "styled-components": "^5.0.0"
   },

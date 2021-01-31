@@ -1,9 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import React from 'react';
-// import Head from 'next/head';
-
-// import db from '../../../db.json'
+import { motion } from 'framer-motion';
 import Widget from '../../components/Widget';
 import Logo from '../../components/Logo';
 import QuizBackground from '../../components/QuizBackground';
@@ -37,6 +35,7 @@ function ResultWidget({ results }) {
                   return somatoriaAtual;
                 }, 0)}
               </h1>
+              <img className="lovecraftGif" src="https://media3.giphy.com/media/1bnecJczhD5gk/giphy.gif" alt="lovecraft gif" />
               <ul>
                 {results.map((result, index) => (
                   <li key={`result__${result}`}>
@@ -95,7 +94,16 @@ function QuestionWidget({
 
   return (
 
-    <Widget>
+    <Widget
+      as={motion.section}
+      transition={{ delay: 0.2, duration: 0.5 }}
+      variants={{
+        show: { opacity: 1 },
+        hidden: { opacity: 0 },
+      }}
+      initial="hidden"
+      animate="show"
+    >
       <Widget.Header>
         <h1>
           <BackLinkArrow href="/" />
@@ -104,7 +112,7 @@ function QuestionWidget({
         </h1>
       </Widget.Header>
       <img
-        alt="Necronomicon"
+        alt="Descrição"
         style={{
           width: '100%',
           height: '150px',
@@ -112,7 +120,16 @@ function QuestionWidget({
         }}
         src={question.image}
       />
-      <Widget.Content>
+      <Widget.Content
+        as={motion.section}
+        transition={{ delay: 0.3, duration: 0.3 }}
+        variants={{
+          show: { opacity: 1, x: '0' },
+          hidden: { opacity: 0, x: '30%' },
+        }}
+        initial="hidden"
+        animate="show"
+      >
         <h2>
           {question.title}
         </h2>
@@ -156,7 +173,6 @@ function QuestionWidget({
               </Widget.Topic>
             );
           })}
-          ;
 
           <Button type="submit" disabled={!hasAlternativeSelected}> Confirm! </Button>
 
@@ -186,7 +202,7 @@ const screenStates = {
 };
 
 export default function QuizPage({ externalQuestions, externalBg }) {
-  const [screenState, setScreenState] = React.useState(screenStates.QUIZ);
+  const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [results, setResults] = React.useState([]);
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
   const questionIndex = currentQuestion;

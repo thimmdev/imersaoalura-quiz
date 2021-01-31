@@ -19,5 +19,4 @@ const QuizBackground = styled.div`
   }
 `;
 
-
 export default QuizBackground;

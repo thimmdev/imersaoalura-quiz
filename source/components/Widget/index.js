@@ -31,6 +31,13 @@ p {
   line-height: 1.3;
 }
 
+.lovecraftGif {
+  
+  margin: 20px auto;
+  align-items: center;
+  width: 200px;
+}
+
 @media (max-width: 1200px){
   flex-direction: column
 }
@@ -106,7 +113,7 @@ ul {
 
 `;
 
-Widget.Topic = styled.a `
+Widget.Topic = styled.a`
   outline: 0;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.contrastText};
