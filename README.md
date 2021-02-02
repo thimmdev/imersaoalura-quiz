@@ -4,11 +4,39 @@
 	🚧  Cthulhu Quiz - Imersão Alura 🚀
 </h1>
 
+![Javascript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![ReactJs Badge](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Nextjs Badge](https://img.shields.io/badge/-NextJs-105b94?style=for-the-badge&logoColor=black)
+![StyledComponents Badge](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+![ESLint Badge](https://img.shields.io/badge/-ESLint-5b1094?style=for-the-badge&logoColor=black)
+![PropTypes Badge](https://img.shields.io/badge/-PropTypes-5b9410?style=for-the-badge&logoColor=black)
+
 <h3> Projeto selecionado para os 10 melhores trabalhos da Imersão 🏆 </h3>
- <p>(4º apresentado)</p>
+ <p>(4º lugar)</p>
 
 <h3>Etapas do Projeto</h3>
-<p>Instalando Componentes:🚀</p> 
+
+## Futuras Correções (bugs) 🚧 :
+<ul>
+<li> 🚧 Correção do sistema de fetch de outros "quizes" 🚧 </li>
+<li> 🚧 Correção da Logo 🚧 </li>
+</ul>
+
+## 🔥 Futuras Features 🔥 :
+<ul>
+<li> 🎵 Música temática ao abrir a página -- 🚧 </li>
+<li> ❗ Modal verificando idade do usuário ao entrar na página -- 🚧 </li>
+<li> 👏 Sistema de "Recompensa" (Título) -- 🚧:
+	<ul>
+	<li>🚧 1-3 acertos: Novice Acolyte </li>
+	<li>🚧 4-6 acertos: Acolyte </li>
+	<li>🚧 7-9 acertos: Summonner </li>
+	<li>🚧 10 acertos: Grand Master of the Cult </li>
+	</ul>
+</li>
+<br />
+<br />
+<p>🔥 Componentes do Projeto: 🚀</p> 
 <ul>
 <li>Reactjs 👌</li>
 <li>ESLint 👌</li>
