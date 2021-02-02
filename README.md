@@ -167,7 +167,7 @@ Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_mediu
 
 ---
 
-## 🦸 Autor
+## 👍 Autor
 
 <a href="https://www.linkedin.com/in/thiagommdev/">
  <img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/76121511?s=400&u=4629bd1a8919ee7a1b04b70adb584ec89099e945&v=4" width="100px;" alt=""/>
