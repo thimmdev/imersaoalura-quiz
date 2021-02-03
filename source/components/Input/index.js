@@ -33,10 +33,10 @@ const InputBase = styled.input`
         flex-direction: column
     }
 
-    /* ::placeholder {
+    ::placeholder {
     text-transform: uppercase;
     color: rgba(255,255,255 0.5) 
-}*/
+    }
 
 `;
 

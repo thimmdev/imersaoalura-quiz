@@ -85,7 +85,8 @@
         "contrastText": "#779955",
         "wrong": "#780000",
         "success": "#8500de",
-        "transpBox": "rgba(0, 0, 0, 0.5)"
+        "transpBox": "rgba(0, 0, 0, 0.5)",
+        "modalBg": "rgba(0, 0, 0, 0.7)"
       },
       "borderRadius": "4px"
     }

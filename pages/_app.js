@@ -6,6 +6,18 @@ import db from '../db.json';
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
+    input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    };
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
   }
   body {
     margin: 0;
