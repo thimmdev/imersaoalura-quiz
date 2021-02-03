@@ -25,7 +25,7 @@
 ## 🔥 Futuras Features 🔥 :
 <ul>
 <li> 🎵 Música temática ao abrir a página -- 🚧 </li>
-<li> ❗ Modal verificando idade do usuário ao entrar na página -- 🚧 </li>
+<li> <s>❗ Modal verificando idade do usuário ao entrar na página -- 🚧</s> 🚀</li>
 <li> 👏 Sistema de "Recompensa" (Título) -- 🚧:
 	<ul>
 	<li>🚧 1-3 acertos: Novice Acolyte </li>
